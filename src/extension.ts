@@ -45,7 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const position = change.range.start; // Posición donde ocurrió el cambio
 
 			// Si el texto agregado es un espacio en blanco
-			if (text === ' ') {
+			if (/^\s+$/.test(text)) {
 				// Obtener el texto hasta el punto antes del cambio
 				const fullText = editor.document.getText(new vscode.Range(0, 0, position.line, position.character)).trim();
 

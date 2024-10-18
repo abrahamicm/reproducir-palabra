@@ -4,6 +4,10 @@
   "description": "reproducir las palabras a texto luego que se escriban",
   "version": "0.0.1",
   "publisher": "abrahamicm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abrahamicm/perfex-module-generator"
+  },
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -11,7 +15,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:plaintext"
   ],
   "main": "./dist/extension.js",
   "contributes": {
